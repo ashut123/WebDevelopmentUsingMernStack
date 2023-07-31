@@ -1,0 +1,164 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    overflow-x: none;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 50%, #ffffff 100%);
+
+    
+}
+.navContainer{
+    width: 100vw;
+    /* background-color: rgba(113,113,154,0.776); */
+    background-color: #031c2c;
+    background-image: linear-gradient(160deg, #031c2c 0%, #1a3a84 100%);
+
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+nav{
+    width: 100%;
+    padding-right: 2rem;
+}
+#navList{
+    width: 100%;
+    padding: 15px;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    list-style: none;
+    font-size: 2.8rem;
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+
+}
+#navLogo{
+    font-size: 2.8rem;
+    color: azure;
+}
+a{
+    text-decoration: none; /* use for removing underline*/
+    color: azure;
+}
+#navItems{
+    display: flex;
+    gap: 40px;
+
+}
+footer{
+    width: 100%;
+}
+.footerBox{
+    background-color: #031c2c;
+    background-image: linear-gradient(160deg, #031c2c 0%, #1a3a84 100%);
+
+    
+    width: 100%;
+    align-items: center;
+    min-height: 40px;
+    
+
+
+}
+.footerBox p{
+    color: azure;
+    font-size: 2rem;
+
+}
+.contentBox{
+    width: 50%;
+    margin:  auto;
+    /* border: 1px solid black; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: 0px 0px 30px black;
+
+
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rightbox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s ;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 20px;
+}
+
+.rightbox img{
+    height: 300px;
+    border-radius: 20px;
+    transition: all 0.6s linear 0s;  /* from this if we move our cursor to image then it slowly slowly increase their sizes*/
+}
+.rightbox img:hover{
+    transform: scale(1.1);   /* image change thier size acording to timing*/
+
+
+}
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+.leftbox h2{
+    font-size: 2rem;
+
+}
+.ingbox{
+    font-size: 1.4rem;
+
+}
+.reciepeBox{
+    font-size: 1.1rem;
+
+}
+
+
+.rightbox .overlay{
+
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(120, 173, 237, 0.385);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;   /* means in normal case without it couldnot be seen*/
+    transition: all 0.3s linear 0s;   /* it means jhatake se na dikhe aram se dikhe*/
+        
+
+
+}
+.rightbox:hover{
+    opacity: 1;
+}
+.rightbox .overlay span{
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+
+

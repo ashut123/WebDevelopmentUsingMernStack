@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height:400px;
+        width: 400px;
+        background-color: aqua;
+        border:3px solid black;
+    }
+    @media (min-width:500px){   /* here if(max-width:500px) will be there then 0-500px it will green after that it will change color into aqua*/ 
+    /*@media(min-width:300px) and(max-width:500px)  after 300 it will change the color and after 500 also it will change the color*/        
+        .box{
+            background-color: green;
+        }
+         
+    }
+</style>
+<body>
+    <div class="box">
+        Hello duniya
+
+    </div>
+    
+</body>
+</html>

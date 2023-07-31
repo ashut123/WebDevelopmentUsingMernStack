@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            border:1px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction: row;
+            height: 800px;
+            /* height: 1200px; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; it will reverse in column wise */
+            /* flex-wrap: wrap; */
+            /*flex-wrap: nowrap;
+            flex-wrap:  wrap-reverse; */
+            /* flex-direction: column;      this is for column only*/ 
+            /* justify-content:center;  here on the place of center there can be start end also we can keep anything */
+            /* justify-content: space-between; */
+            justify-content: center;   /* it lies in center from horizontal and vettical from both side*/
+            justify-content: start;
+            align-items: start;
+            align-content:center;
+            /* align-items: start;
+            align-items: end;
+            align-items: stretch; */
+        }
+        .box{
+            /* height: 200px;
+            width: 200px; */
+            border: 2px solid brown;
+            margin: 2px;
+            paddinG: 2px;
+
+        }
+        #box1{
+            background-color: aqua;
+            /* order:500;
+            /* flex-shrink: 4;  from this box 4 will shrink fast */
+            /* flex-grow: 1; */
+            /* flex-basis:  400px;   from the help of flex-basis we can set the dimension */
+            align-self: start;    /* because of this property we can move the box inside the page any where like corner start end centre*/
+             
+
+        }
+        #box2{
+            background-color: blue;
+            /* flex-grow: 1;
+            flex-basis: 100px;; */
+
+        }
+        #box3{
+            background-color: orange;
+            /* flex-grow: 1; */
+
+        }
+        #box4{
+            background-color: brown;
+            /* order: -1;  with  help of order property we can change the sequence of box
+            flex-grow: 5; */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">box 1</div>
+        <div class="box" id="box2">box 2</div>
+        <div class="box" id="box3">box 3</div>
+        <div class="box" id="box4">box 4</div>
+    </div>
+    
+</body>
+</html>

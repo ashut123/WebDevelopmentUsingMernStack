@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border:1px solid red;
+
+        }
+        img{
+            margin: 10px;
+
+        }
+        .image2{
+            /* position: relative;    this is prelative position  it maintain gap and also also define spacity
+            top:100px;
+            left:100px; */
+            /* position:absolute;    /* here from absoolute the one pictura overlap on another picture and also gap maintained is not there
+            top: 100px; */
+
+
+
+        
+        }
+        .container{
+            position : relative;
+            height: 8000px;
+            background-color: beige;
+        }
+        .image4{
+            position: fixed;  /* from this all images will fix*/
+        }
+        .image3{
+            position: sticky;
+            top:100px;
+        }
+        .box{
+            background-color: aquamarine;
+            height: 5000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="DSC_0482.JPG" alt="poster 1" width="300px" height="300px" class="image1">
+        <img src="DSC_0637.JPG" alt="poster 1" width="300px" height="300px" class="image2">
+        <img src="DSC_0638.JPG" alt="poster 1" width="300px" height="300px" class="image3">
+        <img src="DSC_0641.JPG" alt="poster 1" width="300px" height="300px" class="image4">
+    </div>
+    <div class="box">
+
+    </div>
+</body>
+</html>
